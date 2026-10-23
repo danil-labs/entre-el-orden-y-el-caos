@@ -1,0 +1,29 @@
+# Entornos y cachés: nunca se versionan
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.nbi
+*.nbc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Figuras generadas: se regeneran con los scripts, no se versionan.
+# Las que usa el paper se copian a paper/figuras/ (esas sí se versionan).
+figuras/*
+!figuras/.gitkeep
+
+# PDFs compilados del paper: se regeneran con typst
+paper/*.pdf
+
+# Datos privados o pesados: nunca al repositorio
+datos-privados/
+*.env
+.env
+
+# Salidas del modo --rapido: solo para comprobar que todo corre
+*_rapido.json
+*_rapido.csv

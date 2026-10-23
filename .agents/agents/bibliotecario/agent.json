@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/danil-labs/agent-creator/v1/schema/agent.v1.json",
+  "specVersion": 1,
+  "id": "4c203ae6-09d6-4ad5-a9ea-7936937e7e1f",
+  "scope": "repository",
+  "version": "1.0.0",
+  "memory": { "reach": "project", "store": "local" },
+  "skills": ["skills/verificar-referencia"],
+  "permissions": { "ceiling": "auto", "tools": ["read", "edit", "web"] },
+  "requires": {
+    "network": [
+      { "host": "api.crossref.org", "why": "Busca el DOI de una referencia y compara sus metadatos con los del editor" },
+      { "host": "doi.org", "why": "Resuelve cada DOI para comprobar que la referencia existe y es la que se cita" }
+    ]
+  }
+}

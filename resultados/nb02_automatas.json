@@ -1,0 +1,74 @@
+{
+  "elementales": {
+    "pascal_mod2_verificado": true,
+    "semilla": 2026,
+    "ancho": 256,
+    "reglas_con_compresion_menor_0_1": 134,
+    "referencia": {
+      "0": {
+        "compresion": 0.005,
+        "entropia": 0.0
+      },
+      "4": {
+        "compresion": 0.011,
+        "entropia": 0.561
+      },
+      "108": {
+        "compresion": 0.019,
+        "entropia": 0.826
+      },
+      "30": {
+        "compresion": 1.002,
+        "entropia": 1.0
+      },
+      "90": {
+        "compresion": 0.141,
+        "entropia": 0.479
+      },
+      "110": {
+        "compresion": 0.562,
+        "entropia": 0.88
+      }
+    }
+  },
+  "pila_de_arena": {
+    "semilla": 3,
+    "maxima_por_L": {
+      "16": 433,
+      "32": 2523,
+      "64": 17432
+    }
+  },
+  "ajuste_arena": {
+    "L": 64,
+    "eventos_ajustados": 20000,
+    "automatico": {
+      "xmin": 1472.0,
+      "alfa": 2.738,
+      "ley_vs_lognormal": {
+        "R": -5.75,
+        "p": 8.75e-09
+      }
+    },
+    "xmin_10": {
+      "alfa_con_corte": 0.989,
+      "corte_vs_pura": {
+        "R": 44.56,
+        "p": 0.0
+      },
+      "corte_vs_lognormal": {
+        "R": 19.03,
+        "p": 9.16e-81
+      }
+    }
+  },
+  "incendio": {
+    "semilla": 5,
+    "L": 128,
+    "percentil_99_9_por_theta": {
+      "30": 816.7100000000155,
+      "100": 2601.9390000000467,
+      "300": 6290.620000000041
+    }
+  }
+}

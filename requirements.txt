@@ -1,0 +1,10 @@
+# Dependencias del kit (Python 3.10 o posterior). Instalar con:
+#   python -m pip install -r requirements.txt
+# Versiones con las que se probó el kit: numpy 2.5, matplotlib 3.11, numba 0.68, scipy 1.18, powerlaw 2.0.
+numpy>=1.26
+matplotlib>=3.8
+scipy>=1.11
+numba>=0.59        # opcional: sin numba todo corre igual, pero la pila de arena y el incendio tardan mucho más
+powerlaw>=1.5      # ajuste de leyes de potencias (Clauset, Shalizi y Newman 2009)
+# Para ejecutar los notebooks localmente (en Colab ya vienen):
+jupyter

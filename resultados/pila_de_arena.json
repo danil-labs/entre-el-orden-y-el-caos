@@ -1,0 +1,84 @@
+{
+  "script": "simulaciones/pila_de_arena.py",
+  "semillas": {
+    "pila_de_arena": 3
+  },
+  "parametros": {
+    "tamanos": [
+      32,
+      64,
+      128
+    ],
+    "granos": "60·L² + 300000",
+    "transitorio": "primer tercio",
+    "xmin_fijo": 10,
+    "L_ajuste": 128,
+    "max_eventos_ajuste": 50000
+  },
+  "entorno": {
+    "python": "3.13.15",
+    "numpy": "2.5.3",
+    "plataforma": "Windows-11-10.0.26200-SP0",
+    "fecha_utc": "2026-10-23T01:36:39Z"
+  },
+  "resultados": {
+    "por_tamano": {
+      "L32": {
+        "granos": 361440,
+        "avalanchas": 103076,
+        "maxima": 2871,
+        "percentil_99_9": 1581.9250000000175
+      },
+      "L64": {
+        "granos": 545760,
+        "avalanchas": 158165,
+        "maxima": 19153,
+        "percentil_99_9": 9070.572000000277
+      },
+      "L128": {
+        "granos": 1283040,
+        "avalanchas": 376174,
+        "maxima": 140030,
+        "percentil_99_9": 51362.0
+      }
+    },
+    "ajuste_automatico_L128": {
+      "busqueda_xmin": "56 candidatos en escala logarítmica, distancia KS",
+      "xmin": 16352.0,
+      "n_cola": 839,
+      "ks_D": 0.0548,
+      "alfa": 3.0,
+      "alfa_error": 0.069,
+      "ley_vs_lognormal": {
+        "R": -5.79,
+        "p": 6.97e-09
+      },
+      "ley_vs_exponencial": {
+        "R": -3.59,
+        "p": 0.000335
+      }
+    },
+    "ajuste_con_corte_L128": {
+      "xmin": 10,
+      "n_cola": 33315,
+      "alfa_pura": 1.301,
+      "alfa_con_corte": 1.051,
+      "escala_de_corte_1_sobre_lambda": 16429.7,
+      "corte_vs_pura": {
+        "R": 68.72,
+        "p": 0.0
+      },
+      "corte_vs_lognormal": {
+        "R": 28.59,
+        "p": 7.82e-180
+      },
+      "pura_vs_lognormal": {
+        "R": -56.94,
+        "p": 0.0
+      },
+      "eventos_ajustados": 50000,
+      "veredicto": "ley de potencias con corte: mejor que la pura y que la log-normal"
+    },
+    "el_maximo_crece_con_L": true
+  }
+}

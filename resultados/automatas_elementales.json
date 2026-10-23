@@ -1,0 +1,103 @@
+{
+  "script": "simulaciones/automatas_elementales.py",
+  "semillas": {
+    "condicion_inicial_azar": 2026
+  },
+  "parametros": {
+    "ancho": 256,
+    "pasos": 256,
+    "transitorio": 64,
+    "k_bloques": 6
+  },
+  "entorno": {
+    "python": "3.13.15",
+    "numpy": "2.5.3",
+    "plataforma": "Windows-11-10.0.26200-SP0",
+    "fecha_utc": "2026-10-23T01:34:38Z"
+  },
+  "resultados": {
+    "pascal_mod2_verificado": true,
+    "compresion_media": 0.1708,
+    "entropia_media": 0.6277,
+    "correlacion_compresion_entropia": 0.5097,
+    "reglas_con_compresion_menor_0_1": 134,
+    "reglas_con_compresion_mayor_0_9": 12,
+    "menos_comprimibles": [
+      149,
+      135,
+      169,
+      75,
+      89,
+      86,
+      106,
+      101
+    ],
+    "referencia": {
+      "0": {
+        "clase": "I",
+        "compresion": 0.005,
+        "entropia": 0.0
+      },
+      "255": {
+        "clase": "I",
+        "compresion": 0.005,
+        "entropia": 0.0
+      },
+      "4": {
+        "clase": "II",
+        "compresion": 0.011,
+        "entropia": 0.561
+      },
+      "108": {
+        "clase": "II",
+        "compresion": 0.019,
+        "entropia": 0.826
+      },
+      "30": {
+        "clase": "III",
+        "compresion": 1.002,
+        "entropia": 1.0
+      },
+      "90": {
+        "clase": "III",
+        "compresion": 0.141,
+        "entropia": 0.479
+      },
+      "110": {
+        "clase": "IV",
+        "compresion": 0.562,
+        "entropia": 0.88
+      }
+    },
+    "sensibilidad_ancho_257": {
+      "0": {
+        "compresion": 0.005,
+        "entropia": 0.0
+      },
+      "255": {
+        "compresion": 0.005,
+        "entropia": 0.0
+      },
+      "4": {
+        "compresion": 0.039,
+        "entropia": 0.552
+      },
+      "108": {
+        "compresion": 0.051,
+        "entropia": 0.828
+      },
+      "30": {
+        "compresion": 1.002,
+        "entropia": 1.0
+      },
+      "90": {
+        "compresion": 1.002,
+        "entropia": 1.0
+      },
+      "110": {
+        "compresion": 0.768,
+        "entropia": 0.902
+      }
+    }
+  }
+}

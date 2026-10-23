@@ -1,0 +1,86 @@
+{
+  "script": "simulaciones/logistica.py",
+  "semillas": null,
+  "parametros": {
+    "x0": 0.4,
+    "bifurcacion": {
+      "r": [
+        2.5,
+        4.0,
+        4000
+      ],
+      "transitorio": 2000,
+      "muestras": 400
+    },
+    "lyapunov": {
+      "r": [
+        2.5,
+        4.0,
+        6000
+      ],
+      "transitorio": 2000,
+      "iteraciones": 20000
+    },
+    "sensibilidad": {
+      "r": 3.9,
+      "epsilon": 1e-10,
+      "umbral": 0.1
+    },
+    "feigenbaum": {
+      "niveles": 11
+    }
+  },
+  "entorno": {
+    "python": "3.13.15",
+    "numpy": "2.5.3",
+    "plataforma": "Windows-11-10.0.26200-SP0",
+    "fecha_utc": "2026-10-23T01:34:18Z"
+  },
+  "resultados": {
+    "sensibilidad_paso_de_separacion": 36,
+    "lyapunov": {
+      "inicio_caos_r": 3.5702,
+      "lyapunov_en_r4": 0.6932,
+      "referencia_r4_ln2": 0.6931
+    },
+    "feigenbaum": {
+      "R_superestables_logistica": [
+        2.0,
+        3.2360679775,
+        3.4985616993,
+        3.5546408628,
+        3.5666673799,
+        3.5692435316,
+        3.5697952937,
+        3.5699134654,
+        3.5699387742,
+        3.5699441946,
+        3.5699453555
+      ],
+      "R1_exacto_1_mas_raiz5": 3.2360679775,
+      "delta_logistica": [
+        4.708943,
+        4.680771,
+        4.66296,
+        4.668404,
+        4.668954,
+        4.669157,
+        4.669191,
+        4.669199,
+        4.669201
+      ],
+      "delta_seno": [
+        4.045742,
+        4.555853,
+        4.645182,
+        4.664075,
+        4.668106,
+        4.668967,
+        4.669151,
+        4.669191,
+        4.669199
+      ],
+      "delta_referencia": 4.66920160910299
+    }
+  }
+}
