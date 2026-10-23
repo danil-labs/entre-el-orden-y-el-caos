@@ -38,8 +38,11 @@ requirements.txt       dependencias de Python
 
 ## 1. Abrirlo en Terminus
 
-1. Copia o clona la carpeta `kit-taller` en tu computadora. Si quieres guardar tu historial en
-   GitHub, crea un repositorio vacío tuyo y súbela ahí; el kit no trae remoto.
+1. Clona el repositorio (o descárgalo como ZIP desde GitHub: **Code → Download ZIP**):
+   ```sh
+   git clone https://github.com/danil-labs/entre-el-orden-y-el-caos
+   ```
+   Si quieres guardar tu propio historial, haz un *fork* o crea un repositorio vacío tuyo y súbelo ahí.
 2. Abre Terminus y añade la carpeta del kit a tu espacio de trabajo.
 3. Crea una tarea sobre esa carpeta con el agente de IA que uses (Claude, Codex u otro). Terminus
    lee los agentes de `.agents/agents/` y las reglas de `AGENTS.md`.
@@ -113,14 +116,14 @@ La copia queda en `paper/figuras/` y su script de origen, en `paper/figuras/PROC
 Los notebooks corren de principio a fin en Colab sin instalar nada a mano (instalan `powerlaw` si
 falta; numpy, matplotlib, scipy y numba ya vienen en Colab).
 
-1. Sube la carpeta `kit-taller` completa a **Mi unidad** de Google Drive (arrástrala a
+1. Sube la carpeta `entre-el-orden-y-el-caos` completa a **Mi unidad** de Google Drive (arrástrala a
    drive.google.com).
-2. En Drive, entra a `kit-taller/notebooks/`, haz clic derecho en `01_logistica_y_caos.ipynb` →
+2. En Drive, entra a `entre-el-orden-y-el-caos/notebooks/`, haz clic derecho en `01_logistica_y_caos.ipynb` →
    **Abrir con** → **Google Colaboratory**. (Si no aparece, en el mismo menú elige «Conectar más
    aplicaciones» y añade Colaboratory.)
 3. **Entorno de ejecución → Ejecutar todo.** La primera celda pide permiso para montar tu Drive:
-   acéptalo. Las figuras se guardan en `kit-taller/figuras/` y los números en
-   `kit-taller/resultados/` de tu Drive.
+   acéptalo. Las figuras se guardan en `entre-el-orden-y-el-caos/figuras/` y los números en
+   `entre-el-orden-y-el-caos/resultados/` de tu Drive.
 4. Si pusiste la carpeta en otro lugar, cambia la ruta `RAIZ` en la primera celda de código.
 5. Opcional: **Entorno de ejecución → Cambiar tipo de entorno → GPU**. El notebook 01 usa la GPU si
    hay CuPy y, si no, NumPy; el resultado es el mismo.
@@ -146,3 +149,7 @@ aplicación logística; Wolfram (1983) *Rev. Mod. Phys.* 55:601, los autómatas 
 Wiesenfeld (1987) *Phys. Rev. Lett.* 59:381, la pila de arena. El método de ajuste de leyes de
 potencias es de Clauset, Shalizi y Newman (2009) *SIAM Review* 51:661; antes de citarlo en tu
 paper, pídele a `@bibliotecario` que lo verifique.
+
+## Licencia
+
+MIT: puedes usar, copiar y modificar este kit citando su origen. Ver [`LICENSE`](LICENSE).
